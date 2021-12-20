@@ -1,18 +1,13 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
 
-import { AppComponent } from './app.component';
-import { MyComponentWrapperComponent } from 'src/components/my-react-component/MyReactComponentWrapper';
+import { ReactWrapperComponent } from "../app/react/new-feature/src/ReactComponentWrapper";
+import { AppComponent } from "./app.component";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    MyComponentWrapperComponent,
-  ],
-  imports: [
-    BrowserModule
-  ],
+  declarations: [AppComponent, ReactWrapperComponent],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
